@@ -1,0 +1,4 @@
+interface:
+  display_name: "Collaborative Grilling"
+  short_description: "Sharpen ideas with focused questions"
+  default_prompt: "Use $collaborative-grilling to pressure-test this idea with me."

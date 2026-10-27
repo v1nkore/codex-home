@@ -1,0 +1,12 @@
+# This repository uses an allowlist. New files copied from ~/.codex stay ignored
+# until they are explicitly reviewed and allowed here.
+*
+!.gitignore
+!README.md
+!AGENTS.md
+!config.portable.toml
+!install.sh
+!skills/
+!skills/**
+!scripts/
+!scripts/**
