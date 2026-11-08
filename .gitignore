@@ -14,3 +14,13 @@
 !scripts/**
 !sources/
 !sources/**
+
+# Keep local and credential files out of public skill snapshots.
+**/.DS_Store
+**/__pycache__/
+**/*.pyc
+**/.env
+**/.env.*
+**/auth.json
+**/*.pem
+**/*.key

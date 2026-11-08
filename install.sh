@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
+umask 077
+
+if [ "$#" -ne 0 ]; then
+  printf 'Usage: %s\n' "$0" >&2
+  exit 2
+fi
 
 repo_root="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 codex_root="${CODEX_HOME:-${HOME}/.codex}"
 timestamp="$(date +%Y%m%d-%H%M%S)"
-backup_root="${codex_root}/backups/codex-home-${timestamp}"
+backup_root="${codex_root}/backups/codex-home-${timestamp}-$$"
 
 mkdir -p "${codex_root}" "${codex_root}/skills"
 
