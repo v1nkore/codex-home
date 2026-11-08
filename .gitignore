@@ -8,6 +8,8 @@
 !install.sh
 !skills/
 !skills/**
+!docs/
+!docs/**
 !scripts/
 !scripts/**
 !sources/
